@@ -12,11 +12,24 @@ const App = () => {
             <h1>Containter queries test</h1>
           </Col>
 
-          {Array.from({ length: 9 }).map((d, i) => (
-            <Col xs={12} lg={6} key={i}>
-              <Card index={i} />
-            </Col>
-          ))}
+          <Col xs={6} lg={6}>
+            <Card />
+          </Col>
+          <Col xs={6} lg={3}>
+            <Card />
+          </Col>
+          <Col xs={12} lg={3}>
+            <Card />
+          </Col>
+          <Col xs={12} lg={4}>
+            <Card />
+          </Col>
+          <Col xs={6} lg={8}>
+            <Card />
+          </Col>
+          <Col xs={6} lg={12}>
+            <Card />
+          </Col>
         </Row>
       </Container>
     </div>

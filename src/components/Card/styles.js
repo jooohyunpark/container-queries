@@ -5,8 +5,9 @@ export const CardLayout = styled.div`
   container-name: card;
   margin: 20px 0;
   border-radius: 10px;
-  background: #e0e0e0;
+  background: #edeef5;
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 `
 
 export const CardDiv = styled.div`
@@ -35,6 +36,7 @@ export const Img = styled.img`
 `
 
 export const Description = styled.div`
+  text-wrap: balance;
   padding: 15px;
 
   @container card (min-width: 500px) {
