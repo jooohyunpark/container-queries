@@ -1,6 +1,13 @@
 import React from 'react'
 import Button from './Button'
-import { CardLayout, CardDiv, Img, TextContainer, Description } from './styles'
+import {
+  CardLayout,
+  CardDiv,
+  ImgContainer,
+  Img,
+  TextContainer,
+  Description
+} from './styles'
 
 const Card = () => {
   const randomInteger = Math.floor(Math.random() * 1000)
@@ -8,7 +15,9 @@ const Card = () => {
   return (
     <CardLayout>
       <CardDiv>
-        <Img src={`https://picsum.photos/1600?random=${randomInteger}`} />
+        <ImgContainer>
+          <Img src={`https://picsum.photos/1600?random=${randomInteger}`} />
+        </ImgContainer>
 
         <TextContainer>
           <Description>

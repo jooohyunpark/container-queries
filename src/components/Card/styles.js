@@ -19,23 +19,35 @@ export const CardDiv = styled.div`
   }
 `
 
-export const Img = styled.img`
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-
+export const ImgContainer = styled.div`
   @container card (min-width: 500px) {
-    aspect-ratio: 1 / 1;
     max-width: 200px;
   }
 
   @container card (min-width: 1000px) {
-    aspect-ratio: 16 / 9;
     max-width: 400px;
   }
 `
 
+export const Img = styled.img`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+
+  @container card (min-width: 500px) {
+    aspect-ratio: 1 / 1;
+  }
+
+  @container card (min-width: 1000px) {
+    aspect-ratio: 16 / 9;
+  }
+`
+
 export const TextContainer = styled.div`
+  width: 100%;
+  container-type: inline-size;
+  container-name: text-container;
   text-wrap: balance;
   padding: 15px;
 
