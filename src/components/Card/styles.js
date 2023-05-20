@@ -3,7 +3,10 @@ import styled from 'styled-components'
 export const CardLayout = styled.div`
   container-type: inline-size;
   container-name: card;
-  background: #ccc;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: #e0e0e0;
+  overflow: hidden;
 `
 
 export const CardDiv = styled.div`
@@ -19,7 +22,6 @@ export const Img = styled.img`
   object-fit: cover;
   width: 100%;
   aspect-ratio: 16 / 9;
-  max-width: 150px;
 
   @container card (min-width: 500px) {
     aspect-ratio: 1 / 1;
@@ -32,4 +34,10 @@ export const Img = styled.img`
   }
 `
 
-export const Description = styled.div``
+export const Description = styled.div`
+  padding: 15px;
+
+  @container card (min-width: 500px) {
+    padding: 20px;
+  }
+`

@@ -2,7 +2,6 @@ import React from 'react'
 import { CardLayout, CardDiv, Img, Description } from './styles'
 
 const Card = ({ index = 0 }) => {
-  console.log(index)
   return (
     <CardLayout>
       <CardDiv>
