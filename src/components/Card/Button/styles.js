@@ -29,3 +29,12 @@ export const Icon = styled.div`
     display: block;
   }
 `
+
+export const Smile = styled.div`
+  margin-left: 10px;
+  display: none;
+
+  @container text-container (min-width: 1000px) {
+    display: block;
+  }
+`

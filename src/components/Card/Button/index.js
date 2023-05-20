@@ -1,10 +1,10 @@
 import React from 'react'
-import { Button, Icon } from './styles'
+import { Button, Icon, Smile } from './styles'
 
 export default function ({ children = null }) {
   return (
     <Button>
-      {children} <Icon>🌴🥑🥥</Icon>
+      {children} <Icon>🌴🥑🥥</Icon> <Smile>:)</Smile>
     </Button>
   )
 }
