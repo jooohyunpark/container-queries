@@ -35,11 +35,20 @@ export const Img = styled.img`
   }
 `
 
-export const Description = styled.div`
+export const TextContainer = styled.div`
   text-wrap: balance;
   padding: 15px;
 
   @container card (min-width: 500px) {
     padding: 20px;
+  }
+`
+
+export const Description = styled.div`
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  @container card (min-width: 500px) {
+    font-size: 16px;
   }
 `
