@@ -22,7 +22,7 @@ export const CardDiv = styled.div`
 export const Img = styled.img`
   object-fit: cover;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
 
   @container card (min-width: 500px) {
     aspect-ratio: 1 / 1;
@@ -30,8 +30,8 @@ export const Img = styled.img`
   }
 
   @container card (min-width: 1000px) {
-    aspect-ratio: 1 / 1;
-    max-width: 200px;
+    aspect-ratio: 16 / 9;
+    max-width: 400px;
   }
 `
 

@@ -9,7 +9,7 @@ const App = () => {
       <Container>
         <Row>
           <Col xs={12}>
-            <h1>Containter queries test</h1>
+            <h1>Containter queries test 🧠💡</h1>
           </Col>
 
           <Col xs={6} lg={6}>
