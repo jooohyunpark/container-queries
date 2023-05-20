@@ -4,12 +4,20 @@ export const Button = styled.button`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: white;
+  background: orange;
+  max-width: 100%;
+
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
+  cursor: pointer;
 
   @container text-container (min-width: 500px) {
+    background: lightblue;
+  }
+
+  @container text-container (min-width: 1000px) {
+    background: pink;
   }
 `
 
