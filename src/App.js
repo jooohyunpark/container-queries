@@ -1,13 +1,22 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-grid-system'
 import Card from '@/components/Card'
 import '@/styles/main.css'
 
 const App = () => {
   return (
     <div>
-      <h1>Containter queries test</h1>
+      <Container>
+        <Row>
+          <Col xs={12}>
+            <h1>Containter queries test</h1>
+          </Col>
 
-      <Card />
+          <Col xs={12}>
+            <Card />
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }
